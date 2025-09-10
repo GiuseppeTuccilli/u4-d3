@@ -11,14 +11,7 @@ public class Carrello {
         // this.cliente = new Cliente(cliente.getNome(), cliente.getCognome(), cliente.getEmail(), cliente.getTel());
         this.cliente = cliente;
         articoli = new Articolo[10];
-        double tot = 0;
-        for (int i = 0; i < articoli.length; i++) {
-            if (articoli[i] == null) {
-                break;
-            }
-            tot = tot + articoli[i].getPrezzo();
-        }
-        this.tot = tot;
+        this.tot = 0;
 
     }
 
