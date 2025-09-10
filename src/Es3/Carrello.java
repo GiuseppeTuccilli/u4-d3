@@ -20,11 +20,11 @@ public class Carrello {
     }
 
     public void addArticle(Articolo art) {
-        for (int i = 0; i < this.articoli.length - 1; i++) {
-            if (articoli[i] == null) {
-                break;
+        for (int i = this.articoli.length; i >= 1; i--) {
+            if (articoli[i - 1] != null) {
+                articoli[i] = articoli[i - 1];
             }
-            articoli[i + 1] = articoli[i];
+
         }
         articoli[0] = art;
         this.tot = this.tot + art.getPrezzo();

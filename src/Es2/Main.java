@@ -15,6 +15,9 @@ public class Main {
 
         Sim sim2 = new Sim("3333333333");
         sim2.nuovaChiamata(10, "3344515487");
+        sim2.nuovaChiamata(5, "5412648759");
+        sim2.nuovaChiamata(7, "5412648759");
+
         System.out.println(Arrays.toString(sim2.getChiamate()));
 
     }

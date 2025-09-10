@@ -8,7 +8,7 @@ public class Main {
         int disp;
         String desc;
         double prezzo;
-
+/*
         System.out.println("Nuovo Articolo:");
         System.out.println("descrizione:");
         desc = scanner.nextLine();
@@ -17,13 +17,15 @@ public class Main {
         System.out.println("quantità disponibile:");
         disp = Integer.parseInt(scanner.nextLine());
 
-        Articolo art1 = new Articolo(desc, prezzo, disp);
+        Articolo art1 = new Articolo(desc, prezzo, disp);*/
         Articolo art2 = new Articolo("ciao", 15.4, 3);
+        Articolo art3 = new Articolo("ciao2", 20, 5);
 
         Cliente tizio = new Cliente("Tizio", "Caio", "pippohmailcom", "333333333");
 
         Carrello carrelloDiTizio = new Carrello(tizio);
         carrelloDiTizio.addArticle(art2);
+        carrelloDiTizio.addArticle(art3);
         System.out.println(carrelloDiTizio.toString());
 
 
