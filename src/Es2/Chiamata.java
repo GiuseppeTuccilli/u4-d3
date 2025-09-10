@@ -16,4 +16,12 @@ public class Chiamata {
     public double getDuration() {
         return this.durataMin;
     }
+
+    @Override
+    public String toString() {
+        return "Chiamata{" +
+                "numeroChiamato='" + numeroChiamato + '\'' +
+                ", durataMin=" + durataMin +
+                '}';
+    }
 }
