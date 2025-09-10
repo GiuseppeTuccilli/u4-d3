@@ -8,7 +8,8 @@ public class Carrello {
     private double tot;
 
     public Carrello(Cliente cliente) {
-        this.cliente = new Cliente(cliente.getNome(), cliente.getCognome(), cliente.getEmail(), cliente.getTel());
+        // this.cliente = new Cliente(cliente.getNome(), cliente.getCognome(), cliente.getEmail(), cliente.getTel());
+        this.cliente = cliente;
         articoli = new Articolo[10];
         double tot = 0;
         for (int i = 0; i < articoli.length; i++) {
@@ -23,6 +24,17 @@ public class Carrello {
 
     public Cliente getCliente() {
         return this.cliente;
+    }
+
+    public void addArticle(Articolo art) {
+        for (int i = 0; i < this.articoli.length - 1; i++) {
+            if (articoli[i] == null) {
+                break;
+            }
+            articoli[i + 1] = articoli[i];
+        }
+        articoli[0] = art;
+        this.tot = this.tot + art.getPrezzo();
     }
 
     @Override

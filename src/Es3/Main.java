@@ -18,10 +18,12 @@ public class Main {
         disp = Integer.parseInt(scanner.nextLine());
 
         Articolo art1 = new Articolo(desc, prezzo, disp);
+        Articolo art2 = new Articolo("ciao", 15.4, 3);
 
         Cliente tizio = new Cliente("Tizio", "Caio", "pippohmailcom", "333333333");
 
         Carrello carrelloDiTizio = new Carrello(tizio);
+        carrelloDiTizio.addArticle(art2);
         System.out.println(carrelloDiTizio.toString());
 
 
