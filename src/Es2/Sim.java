@@ -21,14 +21,14 @@ public class Sim {
         return this.credito;
     }
 
-    public void nuovaChiamata(double durata) {
+    public void nuovaChiamata(double durata, String num) {
         for (int i = 0; i < this.chiamate.length - 1; i++) {
             if (chiamate[i] == null) {
                 break;
             }
             chiamate[i + 1] = chiamate[i];
         }
-        chiamate[0] = new Chiamata(this.numero, durata);
+        chiamate[0] = new Chiamata(num, durata);
     }
 
     public Chiamata[] getChiamate() {

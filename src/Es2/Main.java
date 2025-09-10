@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Numero: " + sim1.getNumero() + "; credito: " + sim1.getCredito()); */
 
         Sim sim2 = new Sim("3333333333");
-        sim2.nuovaChiamata(10);
+        sim2.nuovaChiamata(10, "3344515487");
         System.out.println(Arrays.toString(sim2.getChiamate()));
 
     }
