@@ -22,7 +22,7 @@ public class Sim {
     }
 
     public void nuovaChiamata(double durata, String num) {
-        for (int i = this.chiamate.length; i >= 1; i--) {
+        for (int i = this.chiamate.length - 1; i >= 1; i--) {
             if (chiamate[i - 1] != null) {
                 chiamate[i] = chiamate[i - 1];
             }
